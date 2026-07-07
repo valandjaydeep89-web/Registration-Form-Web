@@ -7,6 +7,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+  const form = document.getElementById("registrationForm");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();      // "Not Allowed" ko rokta hai
+
+    alert("Registration Submitted Successfully!");
+
+    form.reset();            // Saari values clear
+
+    updateStrength("");      // Password strength meter reset
+});
 </head>
 <body>
 
