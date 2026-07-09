@@ -21,7 +21,7 @@
     <h1>Create Your Account</h1>
     <p class="subtitle">Fill in your details to complete registration</p>
 
-    <form>
+    <form action="#successModal">
 
       <!-- Full Name -->
       <div class="field">
@@ -89,6 +89,18 @@
 
     <footer>&copy; 2026 Satic &middot; Frontend Development Internship</footer>
 
+  </div>
+
+  <!-- Success Popup -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box">
+      <div class="modal-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      </div>
+      <h2>Registration Submitted!</h2>
+      <p>Thank you for registering. We've received your details successfully.</p>
+      <a href="index.html" class="modal-ok-btn" id="modalOkBtn">OK</a>
+    </div>
   </div>
 
 </body>
